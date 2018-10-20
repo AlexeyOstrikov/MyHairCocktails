@@ -19,6 +19,5 @@ const styles = StyleSheet.create({
 		backgroundColor: "transparent",
 		color: "rgba(237,237,237,1)",
 		fontSize: 28,
-		fontFamily: "PlayfairDisplay-Bold"
 	}
 });

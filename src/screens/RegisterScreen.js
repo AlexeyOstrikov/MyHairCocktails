@@ -61,7 +61,6 @@ const styles = StyleSheet.create({
 		textAlign: "center",
 		color: "rgba(237,237,237,1)",
 		fontSize: 13,
-		fontFamily: "SFUIText-Regular"
 	}
 });
 

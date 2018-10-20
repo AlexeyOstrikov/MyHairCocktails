@@ -47,6 +47,5 @@ const styles = StyleSheet.create({
 		backgroundColor: 'transparent',
 		color: 'rgba(255,255,255,1)',
 		fontSize: 17,
-		fontFamily: 'SFUIText-Regular'
 	}
 });
