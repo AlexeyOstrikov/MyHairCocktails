@@ -10,10 +10,6 @@ const engIcon = require('../assets/images/eng.png');
 
 class AuthLoadingScreen extends Component {
 	
-	componentDidMount() {
-		this.props.user && this.props.navigation.navigate('Home');
-	}
-	
 	goToCreateNewAccount = () => {
 		this.props.navigation.navigate("Register");
 	};

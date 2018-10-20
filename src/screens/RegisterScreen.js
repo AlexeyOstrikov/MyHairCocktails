@@ -55,12 +55,6 @@ const styles = StyleSheet.create({
 		flex: 1,
 		padding: 20,
 		justifyContent: 'center'
-	},
-	forgotYourPassword: {
-		backgroundColor: "transparent",
-		textAlign: "center",
-		color: "rgba(237,237,237,1)",
-		fontSize: 13,
 	}
 });
 

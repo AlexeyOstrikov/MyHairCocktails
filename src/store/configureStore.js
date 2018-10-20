@@ -18,7 +18,8 @@ const middleware = [
 
 const persistConfig = {
 	key: "root",
-	storage
+	storage,
+	blacklist: ['user']
 };
 
 const rootReducer = persistCombineReducers(persistConfig, {

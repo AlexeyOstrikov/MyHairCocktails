@@ -1,28 +1,17 @@
-import { createStackNavigator } from 'react-navigation';
-import SignInScreen from '../screens/SignInScreen';
-import RegisterScreen from '../screens/RegisterScreen';
-import AuthLoadingScreen from "../screens/AuthLoadingScreen";
+import { createSwitchNavigator } from 'react-navigation';
+import StartScreen from "../screens/StartScreen";
+import AuthStack from "../routes/AuthStack";
+import AppStack from "../routes/AppStack";
 
-export const RootNavigator = createStackNavigator({
-		AuthLoading: {screen: AuthLoadingScreen},
-		Login: {screen: SignInScreen},
-		Register: {screen: RegisterScreen},
+export const RootNavigator = createSwitchNavigator({
+		AuthLoading: {screen: StartScreen},
+		App: AppStack,
+		Auth: AuthStack,
 	},
 	{
 		initialRouteName: 'AuthLoading',
 		navigationOptions: {
-			headerStyle: {
-				backgroundColor: "rgba(15,15,15,1)",
-			},
-			headerTintColor: '#ff0000',
-			headerTitleStyle: {
-				color: '#fff',
-				fontWeight: '400',
-				fontSize: 27,
-				justifyContent: 'space-between',
-				textAlign: 'center',
-				flexGrow: 1,
-				paddingRight: 50,
-			},
+			header: null
 		},
-	});
+	}
+);

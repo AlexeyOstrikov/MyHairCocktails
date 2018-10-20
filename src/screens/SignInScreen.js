@@ -14,7 +14,7 @@ export default class SignInScreen extends Component {
 	};
 	
 	submitFormHandler = () => {
-		alert('username: ' + this.state.username)
+		this.props.navigation.navigate("Home");
 	};
 	
 	changeUsername = text => {
